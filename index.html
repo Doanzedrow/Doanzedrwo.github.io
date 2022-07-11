@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Trần Hữu Đoàn_21211TT3655_DoAnFE1</title>
+    <link rel="stylesheet" href="./public/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body onscroll="zoom1();myFunction(); zoom2();zoom3()" class="scroll">
+
+    <script>
+        function myFunction() {
+            if (document.documentElement.scrollTop > 1) {
+                document.getElementById("myP").className = "test";
+            } else {
+                document.getElementById("myP").className = "";
+            }
+        }
+    </script>
+    <!-- header -->
+    <header class="top-header">
+        <!-- navigation -->
+        <div id="myP">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-line">
+                <div class="container">
+                    <a class="navbar-brand img-logo" href="#"><img src="./public/images/logo.png" alt="logo"></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PRICING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CLIENTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PAGES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+       
+        <!-- Banner -->
+        <div class="container">
+            <div class="banner">
+                <h1>Your choice is our choice</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam <br>
+                    quis
+                    notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                <a href="#" class="btn-tour btn-bg">ABOUT US</a>
+                <a href="#" class="btn-tour btn-bg2">GET START</a>
+            </div>
+        </div>
+    </header>
+    <!-- Main content -->
+    <div class="container">
+        <div class="content-top">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis <br>
+                notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+        </div>
+
+        <div class="content-bg">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h3>Clean - Simple - Modern <br>
+                        Beautiful template.</h3>
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+                    <a href="#" class="more">READ MORE</a>
+                </div>
+
+                <div class="col-12 col-md-7">
+                    <div class="content section">
+                        <div class="container">
+                            <img class="mySlides" src="./public/images/1.jpg" alt="1">
+                            <img class="mySlides" src="./public/images/2.jpg" alt="2">
+                            <img class="mySlides" src="./public/images/3.jpg" alt="3">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let myIndex = 0;
+            carousel();
+
+            function carousel() {
+                let i;
+                let x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 6000);
+            }
+        </script>
+
+        <div class="content-bottom">
+            <h4>Template Features</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis <br>
+                notru
+                exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+        </div>
+        <script>
+            let x = 0;
+
+            function zoom1() {
+                x += 1;
+                if (x > 35) {
+                    document.querySelector('.content-bottom').style.animation = 'zoomIn 2s';
+                }
+            }
+        </script>
+    </div>
+    <!-- Menu -->
+    <div class="container">
+        <div class="menu">
+            <div class="row">
+                <div class="col-12 col-md-4 icon-bg">
+                    <span><i class="fa-solid fa-users"></i></span>
+                    <h3>Big Community</h3>
+                    <div>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br>
+                        incididunt..
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 icon-bg">
+                    <span><i class="fa-solid fa-file-video"></i></span>
+                    <h3>Lots Of Videos</h3>
+                    <div>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br>
+                        incididunt..
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 icon-bg">
+                    <span><i class="fa-solid fa-lightbulb"></i></span>
+                    <h3>Smart Layout</h3>
+                    <div>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br>
+                        incididunt..
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 icon-bg">
+                    <span><i class="fa-solid fa-gem"></i></span>
+                    <h3>Easy To Use</h3>
+                    <div>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br>
+                        incididunt..
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 icon-bg">
+                    <span><i class="fa-solid fa-tv"></i></span>
+                    <h3>Responsive Design</h3>
+                    <div>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br>
+                        incididunt..
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 icon-bg">
+                    <span><i class="fa-solid fa-comments"></i></span>
+                    <h3>24/7 Support</h3>
+                    <div>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br>
+                        incididunt..
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="plan">
+        <div class="container">
+            <div class="choose">
+                <h3>Choose Your Perfect Plan</h3>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam
+                    quis
+                    <br>
+                    notru
+                    exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</div>
+            </div>
+            <script>
+                let y = 0;
+
+                function zoom2() {
+                    y += 1;
+                    if (y > 110) {
+                        document.querySelector('.choose').style.animation = 'zoomIn 2s';
+                    }
+                }
+            </script>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="fully">
+                        <div class="per">PERSONAL</div>
+                        <span><strong>$</strong>39</span>
+                        <ul>
+                            <li>Fully Responsive</li>
+                            <li>Clean and modern</li>
+                            <li>Simple and professional</li>
+                            <li>Easy to use</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="#" class="buy"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="fullya">
+                        <div class="per">BUSINESS</div>
+                        <span><strong>$</strong>59</span>
+                        <ul>
+                            <li>Fully Responsive</li>
+                            <li>Clean and modern</li>
+                            <li>Simple and professional</li>
+                            <li>Easy to use</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="#" class="buy"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="fully">
+                        <div class="per">CORPORATE</div>
+                        <span><strong>$</strong>79</span>
+                        <ul>
+                            <li>Fully Responsive</li>
+                            <li>Clean and modern</li>
+                            <li>Simple and professional</li>
+                            <li>Easy to use</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="#" class="buy"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="fully">
+                        <div class="per">PROFESSIONAL</div>
+                        <span><strong>$</strong>99</span>
+                        <ul>
+                            <li>Fully Responsive</li>
+                            <li>Clean and modern</li>
+                            <li>Simple and professional</li>
+                            <li>Easy to use</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="#" class="buy"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="client">
+        <div class="container">
+            <div class="client-bn">
+                <h3>Client Testimonial</h3>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam
+                    quis
+                    <br>
+                    notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let z = 0;
+
+        function zoom3() {
+            z += 1;
+            if (z > 130) {
+                document.querySelector('.client').style.animation = 'zoomIn 2s';
+            }
+        }
+    </script>
+    <div class="module">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single_testimonial">
+                        <div class="testimonial_img">
+                            <img src="./public/images/img1.jpg" alt="anh">
+                        </div>
+                        <div class="testimonial_content">
+                            <h3>Santa Islam</h3>
+                            <h4>Elizabeth INC</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single_testimonial">
+                        <div class="testimonial_img">
+                            <img src="./public/images/img2.jpg" alt="anh2">
+                        </div>
+                        <div class="testimonial_content">
+                            <h3>Masum Billah</h3>
+                            <h4>Elizabeth INC</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single_testimonial">
+                        <div class="testimonial_img">
+                            <img src="./public/images/img3.jpg" alt="anh3">
+                        </div>
+                        <div class="testimonial_content">
+                            <h3>Kona Jahan</h3>
+                            <h4>Elizabeth INC</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single_testimonial">
+                        <div class="testimonial_img">
+                            <img src="./public/images/4.jpg" alt="4">
+                        </div>
+                        <div class="testimonial_content">
+                            <h3>Syed Ekram</h3>
+                            <h4>Elizabeth INC</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nud" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("module");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active1", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active1";
+        }
+        showSlides1();
+
+        function showSlides1() {
+            let i;
+            let slides = document.getElementsByClassName("module");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active1", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active1";
+            setTimeout(showSlides1, 6000);
+        }
+    </script>
+    <script>
+        let f = 0;
+        carousel();
+
+        function carousel() {
+            let i;
+            let x = document.getElementsByClassName("owl-wrapper");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.transform = `translate3d(-${f}px, 0px, 0px)`;
+            }
+            f += 285
+            if (f > 2280) {
+                f = 0;
+            }
+            setTimeout(carousel, 4000);
+        }
+    </script>
+    <div class="logo-img">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="owl-wrapper-outer">
+                        <div class="owl-wrapper">
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/5.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/3.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/4.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/5.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/3.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/4.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/5.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/2.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/3.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 285px;">
+                                <div class="testimonials-section">
+                                    <div class="owl-item" style="width: 285px;">
+                                        <div class="img-box"><img src="./public/images/4.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="slice">
+        <div class="container">
+            <h3>Subscribe to get the latest news, update and offer information. Don't worry, <br>
+                we won't send spam! You can un-subscribe at any time.</h3>
+
+            <form action="#" class="form">
+                <input type="email" name="email" id="email" placeholder="Enter Email" required="required">
+            </form>
+            <button class="sub">Subscribe</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <footer id="sp-footer">
+        <div class="sp-bottom">
+            <div class="container">
+                <div class="row">
+                    <div id="sp-bottom1" class="col-sm-6 col-md-3">
+                        <div class="sp-column ">
+                            <div class="sp-module ">
+                                <h3 class="sp-module-title">Contact</h3>
+                                <div class="sp-module-content">
+                                    <div class="footer_contact">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-rocket"></i>
+                                                <span>3481 Melrose Place, Beverly Hills, CA 90210</span>
+                                            </li>
+                                            <li>
+
+                                                <i class="fa fa-phone"></i>
+                                                <span>Call Us - (+1) 517 397 7100</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-fax"></i>
+                                                <span>Fax - (+12) 123 1234</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-envelope"></i>
+                                                <span>info@demo.com</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sp-bottom2" class="col-sm-6 col-md-3">
+                        <div class="sp-column ">
+                            <div class="sp-module ">
+                                <h3 class="sp-module-title">Elizabeth</h3>
+                                <div class="sp-module-content">
+                                    <div class="footer_contact">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Features</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">FAQ</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">job</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sp-bottom3" class="col-sm-6 col-md-3">
+                        <div class="sp-column ">
+                            <div class="sp-module ">
+                                <h3 class="sp-module-title">Social</h3>
+                                <div class="sp-module-content">
+                                    <div class="footer_contact">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Facebook</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Twitter</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Behance</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dribbble</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Youtube</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sp-bottom4" class="col-sm-6 col-md-3">
+                        <div class="sp-column ">
+                            <div class="sp-module ">
+                                <h3 class="sp-module-title">Support</h3>
+                                <div class="sp-module-content">
+                                    <div class="footer_contact">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Help &amp; Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Privacy Policy</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Company</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Terms &amp; Conditions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="sp-footer1" class="col-sm-12 col-md-12">
+            <div class="sp-column "><span class="sp-copyright">Copyright © 2021 | All Rights Reserved.</span></div>
+        </div>
+    </footer>
+    <a class="scrollup">&nbsp;</a>
+    <script>
+        const scrollBtn = document.querySelector(".scrollup");
+        const btnVisibility = () => {
+            if (window.scrollY > 400) {
+                scrollBtn.style.visibility = "visible";
+            } else {
+                scrollBtn.style.visibility = "hidden";
+            }
+        };
+        document.addEventListener("scroll", () => {
+            btnVisibility();
+        });
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>
